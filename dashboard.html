@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSEP | Student Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">College Skill Exchange Platform</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Explore Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Dashboard Welcome Section -->
+    <section class="dashboard-hero">
+
+        <div class="welcome-content">
+
+            <span class="welcome-tag">STUDENT DASHBOARD</span>
+
+            <h1>Hello, <span id="dashboardName">Student</span>! 👋</h1>
+
+            <p>
+                Welcome to your learning space.
+                Keep learning, sharing and growing with CSEP.
+            </p>
+
+        </div>
+
+        <div class="welcome-icon">
+            🎓
+        </div>
+
+    </section>
+
+
+    <!-- Student Information -->
+    <section class="student-section">
+
+        <div class="section-heading">
+            <h2>My Profile Overview</h2>
+            <p>Your registration information at one place.</p>
+        </div>
+
+        <div class="student-info-card">
+
+            <div class="profile-avatar" id="profileAvatar">
+                S
+            </div>
+
+            <div class="student-details">
+
+                <h3 id="studentName">Student Name</h3>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="studentEmail">Not available</span>
+                </p>
+
+                <p>
+                    <strong>College:</strong>
+                    <span id="studentCollege">Not available</span>
+                </p>
+
+                <p>
+                    <strong>Course:</strong>
+                    <span id="studentCourse">Not available</span>
+                </p>
+
+                <p>
+                    <strong>Year:</strong>
+                    <span id="studentYear">Not available</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard Statistics -->
+    <section class="stats-section">
+
+        <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <h2 id="skillCount">01</h2>
+            <p>Selected Skills</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">💻</div>
+            <h2>06</h2>
+            <p>Featured Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <h2>120+</h2>
+            <p>Community Members</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🌟</div>
+            <h2>01</h2>
+            <p>Learning Journey</p>
+        </div>
+
+    </section>
+
+
+    <!-- My Learning Section -->
+    <section class="learning-section">
+
+        <div class="section-heading">
+            <h2>My Learning Journey</h2>
+
+            <p>
+                Continue exploring your selected skills
+                and discover new opportunities.
+            </p>
+        </div>
+
+
+        <div class="learning-card">
+
+            <div class="learning-icon">🚀</div>
+
+            <div class="learning-content">
+
+                <h3>Your Selected Skill</h3>
+
+                <p id="selectedSkill">
+                    Explore your learning interests.
+                </p>
+
+                <a href="skills.html" class="primary-btn">
+                    Explore More Skills
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quick Access -->
+    <section class="quick-access">
+
+        <div class="section-heading">
+
+            <h2>Quick Access</h2>
+
+            <p>
+                Everything you need to continue
+                your learning journey.
+            </p>
+
+        </div>
+
+
+        <div class="quick-container">
+
+            <!-- Skills -->
+            <div class="quick-card">
+
+                <div class="quick-icon">📚</div>
+
+                <h3>Explore Skills</h3>
+
+                <p>
+                    Discover new skills and find
+                    students who can help you learn.
+                </p>
+
+                <a href="skills.html">Explore Now →</a>
+
+            </div>
+
+
+            <!-- Projects -->
+            <div class="quick-card">
+
+                <div class="quick-icon">💻</div>
+
+                <h3>Student Projects</h3>
+
+                <p>
+                    Explore creative projects
+                    and get inspired by others.
+                </p>
+
+                <a href="projects.html">View Projects →</a>
+
+            </div>
+
+
+            <!-- Community -->
+            <div class="quick-card">
+
+                <div class="quick-icon">👥</div>
+
+                <h3>Community</h3>
+
+                <p>
+                    Connect with students,
+                    share ideas and discuss questions.
+                </p>
+
+                <a href="community.html">Join Community →</a>
+
+            </div>
+
+
+            <!-- Skill Details -->
+            <div class="quick-card">
+
+                <div class="quick-icon">🎯</div>
+
+                <h3>My Skill Details</h3>
+
+                <p>
+                    Learn more about your selected
+                    skill and its learning levels.
+                </p>
+
+                <a href="skill-details.html">Learn More →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Recent Activity -->
+    <section class="activity-section">
+
+        <div class="section-heading">
+
+            <h2>Recent Activities</h2>
+
+            <p>
+                Keep track of your activities
+                on the CSEP platform.
+            </p>
+
+        </div>
+
+
+        <div class="activity-container">
+
+            <div class="activity-item">
+                <div class="activity-icon">🎓</div>
+
+                <div>
+                    <h3>Joined CSEP</h3>
+                    <p>You successfully registered on CSEP.</p>
+                </div>
+            </div>
+
+
+            <div class="activity-item">
+                <div class="activity-icon">📚</div>
+
+                <div>
+                    <h3>Selected a Skill</h3>
+                    <p>Your learning journey has started.</p>
+                </div>
+            </div>
+
+
+            <div class="activity-item">
+                <div class="activity-icon">🌐</div>
+
+                <div>
+                    <h3>Explore the Community</h3>
+                    <p>Connect with other students and share knowledge.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Motivation Section -->
+    <section class="motivation-section">
+
+        <h2>Keep Learning, Keep Growing! 🌱</h2>
+
+        <p>
+            Every skill you learn brings you one step
+            closer to your goals. Share your knowledge
+            and help others grow.
+        </p>
+
+        <a href="skills.html" class="motivation-btn">
+            Continue Learning
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>CSEP.</h2>
+
+        <p>Learn a Skill • Share a Skill</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="community.html">Community</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 College Skill Exchange Platform.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

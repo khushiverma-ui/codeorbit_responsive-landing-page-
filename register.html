@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | CSEP</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>College Skills Exchange Platform</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#skills">Explore Skills</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Join the CSEP Community!</h1>
+
+            <p>
+                Start your learning journey today.
+                Connect with students, discover skills and share knowledge.
+            </p>
+
+            <form id="registrationForm">
+
+                <fieldset>
+                    <legend>Student Registration</legend>
+
+                    <label for="fullname">Full Name</label><br>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your college email" required>
+                    <br><br>
+
+                    <label for="phone">Mobile Number</label><br>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your mobile number"
+                           pattern="[0-9]{10}" required>
+                    <br><br>
+
+                    <label for="college">College Name</label><br>
+                    <input type="text" id="college" name="college"
+                           placeholder="Enter your college name" required>
+                    <br><br>
+
+                    <label for="course">Course</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">Select your course</option>
+                        <option>B.Tech</option>
+                        <option>BCA</option>
+                        <option>MCA</option>
+                        <option>BBA</option>
+                        <option>B.Sc</option>
+                        <option>Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="year">Current Year</label><br>
+                    <select id="year" name="year" required>
+                        <option value="">Select your year</option>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                    <br><br>
+
+                    <label for="skill">Your Interested Skill</label><br>
+                    <select id="skill" name="skill" required>
+                        <option value="">Choose a skill</option>
+                        <option>Python Programming</option>
+                        <option>C Programming</option>
+                        <option>Web Development</option>
+                        <option>AI & Machine Learning</option>
+                        <option>Graphic Designing</option>
+                        <option>Data Analytics</option>
+                        <option>Content Writing</option>
+                        <option>Video Editing</option>
+                        <option>Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="password">Create Password</label><br>
+                    <input type="password" id="password" name="password"
+                           placeholder="Create a password"
+                           minlength="6" required>
+                    <br><br>
+
+                    <label for="confirm-password">Confirm Password</label><br>
+                    <input type="password" id="confirm-password"
+                           name="confirm-password"
+                           placeholder="Confirm your password"
+                           minlength="6" required>
+                    <br><br>
+
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        I agree to the terms and conditions.
+                    </label>
+                    <br><br>
+
+                    <button type="submit"><a href="registration_success.html">Create My Account →</a></button>
+                
+                </fieldset>
+            </form>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login Here</a>
+            </p>
+
+            <p>
+                <a href="index.html">← Back to Home</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>CSEP.</h3>
+        <p>Learn a Skill • Share a Skill</p>
+        <p>© 2026 College Skill Exchange Platform</p>
+    </footer>
+
+    <script src="register.js"></script>
+
+</body>
+</html>

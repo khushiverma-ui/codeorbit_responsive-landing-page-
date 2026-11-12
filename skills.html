@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Skills | CSEP</title>
+
+    <link rel="stylesheet" href="skills.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>College Skill Exchange Platform</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">My Dashboard</a>
+            <a href="skills.html" class="active">Explore Skills</a>
+            <a href="community.html">Community</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Explore Skills & Discover Your Potential</h1>
+
+        <p>
+            Learn something new, share your knowledge and connect
+            with students who have similar interests.
+        </p>
+
+        <!-- Search Bar -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="skillSearch"
+                placeholder="Search for a skill..."
+            >
+
+            <button type="button" id="searchBtn">
+                Search
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <main>
+
+        <section class="skills-section">
+
+            <div class="section-heading">
+                <h2>Explore Popular Skills</h2>
+
+                <p>
+                    Choose a skill and start your learning journey.
+                </p>
+            </div>
+
+
+            <!-- Skill Categories -->
+            <div class="categories">
+
+                <button type="button" class="category-btn active"
+                    data-category="all">All Skills</button>
+
+                <button type="button" class="category-btn"
+                    data-category="programming">Programming</button>
+
+                <button type="button" class="category-btn"
+                    data-category="design">Design</button>
+
+                <button type="button" class="category-btn"
+                    data-category="creative">Creative</button>
+
+                <button type="button" class="category-btn"
+                    data-category="other">Other</button>
+
+            </div>
+
+
+            <!-- Skill Cards -->
+            <div class="skills-container" id="skillsContainer">
+
+
+                <!-- Python -->
+                <div class="skill-card" data-category="programming">
+
+                    <div class="skill-icon">🐍</div>
+
+                    <h3>Python Programming</h3>
+
+                    <p>
+                        Learn Python from basics to advanced
+                        programming concepts.
+                    </p>
+
+                    <a href="skills_detail.html?skill=python"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- C Programming -->
+                <div class="skill-card" data-category="programming">
+
+                    <div class="skill-icon">💻</div>
+
+                    <h3>C Programming</h3>
+
+                    <p>
+                        Understand programming fundamentals,
+                        loops, arrays and functions.
+                    </p>
+
+                    <a href="skills_detail.html?skill=c"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Web Development -->
+                <div class="skill-card" data-category="programming">
+
+                    <div class="skill-icon">🌐</div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Create attractive websites using
+                        HTML, CSS and JavaScript.
+                    </p>
+
+                    <a href="skills_detail.html?skill=web-development"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- AI & ML -->
+                <div class="skill-card" data-category="programming">
+
+                    <div class="skill-icon">🤖</div>
+
+                    <h3>AI & Machine Learning</h3>
+
+                    <p>
+                        Explore artificial intelligence
+                        and machine learning concepts.
+                    </p>
+
+                    <a href="skills_detail.html?skill=ai-ml"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Graphic Designing -->
+                <div class="skill-card" data-category="design">
+
+                    <div class="skill-icon">🎨</div>
+
+                    <h3>Graphic Designing</h3>
+
+                    <p>
+                        Learn creative designing, colour
+                        combinations and visual layouts.
+                    </p>
+
+                    <a href="skills_detail.html?skill=graphic-design"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Data Analytics -->
+                <div class="skill-card" data-category="programming">
+
+                    <div class="skill-icon">📊</div>
+
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Learn how to analyse data and
+                        discover useful insights.
+                    </p>
+
+                    <a href="skills_detail.html?skill=data-analytics"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Content Writing -->
+                <div class="skill-card" data-category="creative">
+
+                    <div class="skill-icon">✍️</div>
+
+                    <h3>Content Writing</h3>
+
+                    <p>
+                        Improve writing skills and learn
+                        to create engaging content.
+                    </p>
+
+                    <a href="skills_detail.html?skill=content-writing"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Video Editing -->
+                <div class="skill-card" data-category="creative">
+
+                    <div class="skill-icon">🎬</div>
+
+                    <h3>Video Editing</h3>
+
+                    <p>
+                        Learn video editing, transitions
+                        and creative storytelling.
+                    </p>
+
+                    <a href="skills_detail.html?skill=video-editing"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <!-- Communication Skills -->
+                <div class="skill-card" data-category="other">
+
+                    <div class="skill-icon">🗣️</div>
+
+                    <h3>Communication Skills</h3>
+
+                    <p>
+                        Develop confidence, presentation
+                        and communication abilities.
+                    </p>
+
+                    <a href="skills_detail.html?skill=communication"
+                       class="learn-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p id="noResults" style="display: none;">
+                No skills found. Try another search!
+            </p>
+
+        </section>
+
+
+        <!-- Call To Action -->
+        <section class="join-section">
+
+            <h2>Have a Skill to Share?</h2>
+
+            <p>
+                Connect with other students and help them
+                learn something new.
+            </p>
+
+            <a href="community.html" class="join-btn">
+                Join Our Community →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>CSEP.</h3>
+
+        <p>Learn a Skill • Share a Skill</p>
+
+        <p>© 2026 College Skill Exchange Platform</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="skills.js"></script>
+
+</body>
+</html>

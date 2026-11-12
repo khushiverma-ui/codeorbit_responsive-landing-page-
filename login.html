@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSEP | Student Login</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">CSEP<span>.</span></h2>
+
+            <a href="index.html" class="home-link">
+                Back to Home
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- LOGIN SECTION -->
+
+    <section class="login-section">
+
+        <div class="login-container">
+
+            <!-- LEFT SIDE -->
+
+            <div class="login-left">
+
+                <div class="login-icon">🎓</div>
+
+                <h1>Welcome Back!</h1>
+
+                <p>
+                    Continue your learning journey with CSEP.
+                    Connect with students, explore new skills
+                    and grow together.
+                </p>
+
+                <div class="login-features">
+
+                    <div>
+                        <span>✓</span>
+                        Learn New Skills
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Connect With Students
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Share Your Projects
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE LOGIN FORM -->
+
+            <div class="login-right">
+
+                <h2>Student Login</h2>
+
+                <p class="login-subtitle">
+                    Enter your registered details to access your account.
+                </p>
+
+
+                <!-- LOGIN FORM -->
+
+                <form id="loginForm">
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your registered email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- REMEMBER ME AND FORGOT PASSWORD -->
+
+                    <div class="login-options">
+
+                        <label class="remember-me">
+
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                            >
+
+                            Remember Me
+
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- LOGIN BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="login-btn"
+                        id="loginButton"
+                    >
+                        Login to CSEP
+                    </button>
+
+                </form>
+
+
+                <!-- REGISTER LINK -->
+
+                <p class="register-text">
+
+                    Don't have an account?
+
+                    <a href="register.html">
+                        Register Now
+                    </a>
+
+                </p>
+
+
+                <!-- BOTTOM TEXT -->
+
+                <div class="login-divider">
+
+                    <span>
+                        Learn a Skill • Share a Skill
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 CSEP - College Skill Exchange Platform
+        </p>
+
+        <p>
+            Learn Together. Grow Together.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT FILE -->
+
+    <script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project List | CSEP</title>
+
+    <link rel="stylesheet" href="project_list.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">CSEP.</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Explore Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+            <a href="registration-success.html" class="nav-btn">
+                My Account
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="project-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">CSEP Project Hub</span>
+
+            <h1>Explore Student Projects</h1>
+
+            <p>
+                Discover creative ideas, explore student work
+                and get inspired to build something amazing.
+            </p>
+
+            <a href="#project-list" class="hero-btn">
+                Explore Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECT INTRODUCTION -->
+    <section class="project-intro">
+
+        <h2>Discover Amazing Projects</h2>
+
+        <p>
+            Explore projects created by students in different fields.
+            Learn new technologies, share ideas and improve your skills.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH AND FILTER SECTION -->
+    <section class="project-list-section" id="project-list">
+
+        <div class="section-heading">
+
+            <h2>All Projects</h2>
+
+            <p>Find projects according to your interests.</p>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class="project-search">
+
+            <input
+                type="text"
+                id="projectSearch"
+                placeholder="Search projects..."
+            >
+
+            <button id="searchBtn" type="button">
+                Search
+            </button>
+
+        </div>
+
+
+        <!-- CATEGORY FILTERS -->
+        <div class="category-filters">
+
+            <button class="category-btn active" data-category="all">
+                All Projects
+            </button>
+
+            <button class="category-btn" data-category="web">
+                Web Development
+            </button>
+
+            <button class="category-btn" data-category="python">
+                Python
+            </button>
+
+            <button class="category-btn" data-category="ai">
+                AI & ML
+            </button>
+
+            <button class="category-btn" data-category="design">
+                Designing
+            </button>
+
+        </div>
+
+
+        <!-- PROJECT CARDS -->
+        <div class="project-container" id="projectContainer">
+
+
+            <!-- PROJECT 1 -->
+            <div class="project-card" data-category="web">
+
+                <div class="project-icon">💻</div>
+
+                <span class="project-category">Web Development</span>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A personal website to showcase skills,
+                    achievements and projects.
+                </p>
+
+                <div class="technology">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="skill-details.html?skill=web-development"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+            <div class="project-card" data-category="python">
+
+                <div class="project-icon">🐍</div>
+
+                <span class="project-category">Python</span>
+
+                <h3>Student Management System</h3>
+
+                <p>
+                    A project to manage student information
+                    and academic records.
+                </p>
+
+                <div class="technology">
+                    <span>Python</span>
+                    <span>Programming</span>
+                </div>
+
+                <a href="skill-details.html?skill=python"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+            <div class="project-card" data-category="ai">
+
+                <div class="project-icon">🤖</div>
+
+                <span class="project-category">AI & ML</span>
+
+                <h3>AI Chatbot</h3>
+
+                <p>
+                    An intelligent chatbot concept designed
+                    to answer basic user questions.
+                </p>
+
+                <div class="technology">
+                    <span>Python</span>
+                    <span>AI</span>
+                    <span>ML</span>
+                </div>
+
+                <a href="skill-details.html?skill=ai-ml"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 4 -->
+            <div class="project-card" data-category="design">
+
+                <div class="project-icon">🎨</div>
+
+                <span class="project-category">Designing</span>
+
+                <h3>Creative Logo Design</h3>
+
+                <p>
+                    A creative logo design project using
+                    colours, shapes and typography.
+                </p>
+
+                <div class="technology">
+                    <span>Canva</span>
+                    <span>Graphic Design</span>
+                </div>
+
+                <a href="skill-details.html?skill=graphic-design"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 5 -->
+            <div class="project-card" data-category="web">
+
+                <div class="project-icon">📝</div>
+
+                <span class="project-category">Web Development</span>
+
+                <h3>To-Do List Application</h3>
+
+                <p>
+                    A simple application to organize daily
+                    tasks and manage activities.
+                </p>
+
+                <div class="technology">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="skill-details.html?skill=web-development"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 6 -->
+            <div class="project-card" data-category="python">
+
+                <div class="project-icon">📊</div>
+
+                <span class="project-category">Python</span>
+
+                <h3>Student Result Analysis</h3>
+
+                <p>
+                    Analyse student marks and display
+                    academic performance information.
+                </p>
+
+                <div class="technology">
+                    <span>Python</span>
+                    <span>Data Analytics</span>
+                </div>
+
+                <a href="skill-details.html?skill=data-analytics"
+                   class="project-btn">
+                    Explore Skill
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- NO RESULTS MESSAGE -->
+        <p id="noResults" class="no-results" style="display: none;">
+            No projects found. Try another search!
+        </p>
+
+    </section>
+
+
+    <!-- CTA SECTION -->
+    <section class="project-cta">
+
+        <h2>Have an Idea for a Project?</h2>
+
+        <p>
+            Connect with students, share your ideas
+            and start building something together.
+        </p>
+
+        <a href="community.html" class="cta-btn">
+            Join Our Community
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>CSEP.</h2>
+
+        <p>Learn a Skill • Share a Skill</p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="community.html">Community</a>
+            <a href="registration-success.html">My Account</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 College Skill Exchange Platform.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="project_list.js"></script>
+
+</body>
+</html>

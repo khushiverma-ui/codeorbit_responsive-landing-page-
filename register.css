@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f4f5ff;
+    color: #26304a;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 28px;
+    color: #5546d8;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5546d8;
+}
+
+/* Main Section */
+main {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 55px 20px;
+}
+
+main section {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(70, 65, 150, 0.12);
+}
+
+main section > h1 {
+    text-align: center;
+    color: #29245f;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+main section > p {
+    text-align: center;
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Form */
+fieldset {
+    border: 1px solid #e1e3f5;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+legend {
+    color: #5546d8;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+form label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #39445c;
+    margin-bottom: 8px;
+}
+
+form input:not([type="checkbox"]),
+form select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dce1ed;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    font-size: 14px;
+    background: #fafbff;
+    color: #344054;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #6657e8;
+    box-shadow: 0 0 0 3px rgba(102, 87, 232, 0.12);
+    background: white;
+}
+
+form input::placeholder {
+    color: #a0a8b8;
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+    accent-color: #5546d8;
+    cursor: pointer;
+}
+
+form label[for="terms"] {
+    margin-left: 5px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #5546d8, #8273f2);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(85, 70, 216, 0.25);
+}
+
+/* Login and Home Links */
+main section p a {
+    color: #5546d8;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main section p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #22204e;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: #b9b0ff;
+}
+
+footer p {
+    font-size: 13px;
+    color: #d1d0e8;
+    margin: 6px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 18px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    main section {
+        padding: 25px 18px;
+    }
+
+    main section > h1 {
+        font-size: 24px;
+    }
+
+    fieldset {
+        padding: 18px;
+    }
+}

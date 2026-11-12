@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSEP | Community</title>
+
+    <link rel="stylesheet" href="community.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">College Skills Exchange Platform</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Explore Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="community-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">WELCOME TO CSEP COMMUNITY</span>
+
+            <h1>Connect. Collaborate. Grow Together.</h1>
+
+            <p>
+                A place where students share knowledge, ask questions,
+                exchange ideas and learn from each other.
+            </p>
+
+            <a href="#discussions" class="hero-btn">
+                Explore Community
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Community Introduction -->
+    <section class="community-intro">
+
+        <h2>One Community, Endless Learning</h2>
+
+        <p>
+            Learning becomes easier when we learn together.
+            Connect with students who share your interests,
+            discuss new ideas and improve your skills.
+        </p>
+
+    </section>
+
+
+    <!-- Community Statistics -->
+    <section class="community-stats">
+
+        <div class="stat-card">
+            <h2>120+</h2>
+            <p>Community Members</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>25+</h2>
+            <p>Discussions</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>10+</h2>
+            <p>Study Groups</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>15+</h2>
+            <p>Shared Projects</p>
+        </div>
+
+    </section>
+
+
+    <!-- Student Discussions -->
+    <section class="discussion-section" id="discussions">
+
+        <div class="section-heading">
+            <h2>Student Discussions</h2>
+
+            <p>
+                Ask questions, share your knowledge
+                and help other students.
+            </p>
+        </div>
+
+
+        <!-- Create Post -->
+        <div class="create-post">
+
+            <h3>Start a Discussion</h3>
+
+            <form id="postForm">
+
+                <input
+                    type="text"
+                    id="postTitle"
+                    placeholder="Enter discussion title..."
+                    required
+                >
+
+                <textarea
+                    id="postContent"
+                    placeholder="What's on your mind? Ask a question or share an idea..."
+                    rows="4"
+                    required
+                ></textarea>
+
+                <select id="postCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="AI & ML">AI & ML</option>
+                    <option value="Designing">Designing</option>
+                    <option value="Career Guidance">Career Guidance</option>
+                    <option value="General">General Discussion</option>
+                </select>
+
+                <button type="submit" class="primary-btn">
+                    Post Discussion
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- Discussion Posts -->
+        <div class="discussion-container" id="discussionContainer">
+
+            <!-- Post 1 -->
+            <div class="discussion-card">
+
+                <div class="post-header">
+
+                    <div class="student-avatar">A</div>
+
+                    <div>
+                        <h3>Ayushi Sharma</h3>
+                        <span>Computer Science Student</span>
+                    </div>
+
+                </div>
+
+                <span class="post-category">Programming</span>
+
+                <h3>How should I start learning Python?</h3>
+
+                <p>
+                    I am a beginner in programming.
+                    Can anyone suggest a good roadmap
+                    to learn Python from scratch?
+                </p>
+
+                <div class="post-actions">
+
+                    <button type="button" class="like-btn">
+                        ♡ Like <span class="like-count">5</span>
+                    </button>
+
+                    <button type="button" class="comment-toggle">
+                        💬 Comments
+                    </button>
+
+                </div>
+
+                <div class="comments-section">
+
+                    <div class="comment-list">
+
+                        <p>
+                            <strong>Rahul:</strong>
+                            Start with variables, loops and functions.
+                        </p>
+
+                        <p>
+                            <strong>Priya:</strong>
+                            Practice small programs daily!
+                        </p>
+
+                    </div>
+
+                    <form class="comment-form">
+
+                        <input
+                            type="text"
+                            placeholder="Write a comment..."
+                            required
+                        >
+
+                        <button type="submit">Reply</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- Post 2 -->
+            <div class="discussion-card">
+
+                <div class="post-header">
+
+                    <div class="student-avatar">R</div>
+
+                    <div>
+                        <h3>Rahul Verma</h3>
+                        <span>Web Development Learner</span>
+                    </div>
+
+                </div>
+
+                <span class="post-category">Web Development</span>
+
+                <h3>HTML, CSS ke baad kya seekhna chahiye?</h3>
+
+                <p>
+                    I have completed basic HTML and CSS.
+                    Should I learn JavaScript first or move
+                    towards React?
+                </p>
+
+                <div class="post-actions">
+
+                    <button type="button" class="like-btn">
+                        ♡ Like <span class="like-count">8</span>
+                    </button>
+
+                    <button type="button" class="comment-toggle">
+                        💬 Comments
+                    </button>
+
+                </div>
+
+                <div class="comments-section">
+
+                    <div class="comment-list">
+                        <p>
+                            <strong>Ananya:</strong>
+                            Learn JavaScript first, then React.
+                        </p>
+                    </div>
+
+                    <form class="comment-form">
+
+                        <input
+                            type="text"
+                            placeholder="Write a comment..."
+                            required
+                        >
+
+                        <button type="submit">Reply</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- Post 3 -->
+            <div class="discussion-card">
+
+                <div class="post-header">
+
+                    <div class="student-avatar">P</div>
+
+                    <div>
+                        <h3>Priya Singh</h3>
+                        <span>B.Tech Student</span>
+                    </div>
+
+                </div>
+
+                <span class="post-category">Career Guidance</span>
+
+                <h3>How to find a good internship?</h3>
+
+                <p>
+                    I want to gain practical experience
+                    through internships. Please share
+                    some useful suggestions and resources.
+                </p>
+
+                <div class="post-actions">
+
+                    <button type="button" class="like-btn">
+                        ♡ Like <span class="like-count">12</span>
+                    </button>
+
+                    <button type="button" class="comment-toggle">
+                        💬 Comments
+                    </button>
+
+                </div>
+
+                <div class="comments-section">
+
+                    <div class="comment-list">
+                        <p>
+                            <strong>Ayushi:</strong>
+                            Keep your resume and GitHub profile updated.
+                        </p>
+                    </div>
+
+                    <form class="comment-form">
+
+                        <input
+                            type="text"
+                            placeholder="Write a comment..."
+                            required
+                        >
+
+                        <button type="submit">Reply</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Study Groups -->
+    <section class="study-groups">
+
+        <div class="section-heading">
+            <h2>Explore Study Groups</h2>
+
+            <p>
+                Find students with similar interests
+                and learn together.
+            </p>
+        </div>
+
+
+        <div class="groups-container">
+
+            <div class="group-card">
+                <div class="group-icon">🐍</div>
+
+                <h3>Python Learners</h3>
+
+                <p>
+                    Learn Python, solve coding problems
+                    and share programming tips.
+                </p>
+
+                <span>35 Members</span>
+
+                <button type="button" class="join-btn">
+                    Join Group
+                </button>
+            </div>
+
+
+            <div class="group-card">
+                <div class="group-icon">💻</div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Explore HTML, CSS, JavaScript
+                    and build creative websites.
+                </p>
+
+                <span>42 Members</span>
+
+                <button type="button" class="join-btn">
+                    Join Group
+                </button>
+            </div>
+
+
+            <div class="group-card">
+                <div class="group-icon">🤖</div>
+
+                <h3>AI & ML Community</h3>
+
+                <p>
+                    Discuss artificial intelligence,
+                    machine learning and new ideas.
+                </p>
+
+                <span>28 Members</span>
+
+                <button type="button" class="join-btn">
+                    Join Group
+                </button>
+            </div>
+
+
+            <div class="group-card">
+                <div class="group-icon">🎨</div>
+
+                <h3>Creative Designers</h3>
+
+                <p>
+                    Share designs, learn graphic designing
+                    and inspire each other.
+                </p>
+
+                <span>20 Members</span>
+
+                <button type="button" class="join-btn">
+                    Join Group
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Find Teammates -->
+    <section class="teammates-section">
+
+        <div class="section-heading">
+
+            <h2>Find Your Project Teammates</h2>
+
+            <p>
+                Great projects begin with great teamwork.
+                Connect with students and build something together.
+            </p>
+
+        </div>
+
+
+        <div class="teammate-card">
+
+            <div class="teammate-icon">🤝</div>
+
+            <div class="teammate-content">
+
+                <h3>Looking for Project Partners?</h3>
+
+                <p>
+                    Find students who have similar interests
+                    and different skills. Collaborate,
+                    exchange ideas and create projects together.
+                </p>
+
+                <a href="projects.html" class="primary-btn">
+                    Explore Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Upcoming Events -->
+    <section class="events-section">
+
+        <div class="section-heading">
+
+            <h2>Upcoming Events</h2>
+
+            <p>
+                Participate in learning activities
+                and improve your knowledge.
+            </p>
+
+        </div>
+
+
+        <div class="events-container">
+
+            <div class="event-card">
+
+                <div class="event-date">
+                    <span>15</span>
+                    <small>DEC</small>
+                </div>
+
+                <div class="event-info">
+
+                    <h3>Web Development Workshop</h3>
+
+                    <p>
+                        Learn the basics of creating
+                        responsive websites.
+                    </p>
+
+                    <span>📍 Online Event</span>
+
+                </div>
+
+                <button type="button" class="event-btn">
+                    Register
+                </button>
+
+            </div>
+
+
+            <div class="event-card">
+
+                <div class="event-date">
+                    <span>20</span>
+                    <small>DEC</small>
+                </div>
+
+                <div class="event-info">
+
+                    <h3>Python Coding Challenge</h3>
+
+                    <p>
+                        Test your programming skills
+                        through fun coding challenges.
+                    </p>
+
+                    <span>📍 Computer Lab</span>
+
+                </div>
+
+                <button type="button" class="event-btn">
+                    Register
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Active Members -->
+    <section class="members-section">
+
+        <div class="section-heading">
+
+            <h2>Meet Our Community Members</h2>
+
+            <p>
+                Students sharing their knowledge
+                and helping each other grow.
+            </p>
+
+        </div>
+
+
+        <div class="members-container">
+
+            <div class="member-card">
+                <div class="member-avatar">A</div>
+                <h3>Ayushi Sharma</h3>
+                <p>Python Programming</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar">R</div>
+                <h3>Rahul Verma</h3>
+                <p>Web Development</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar">P</div>
+                <h3>Priya Singh</h3>
+                <p>Graphic Designing</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-avatar">A</div>
+                <h3>Ananya Gupta</h3>
+                <p>AI & Machine Learning</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final CTA -->
+    <section class="community-cta">
+
+        <h2>Be a Part of Our Community!</h2>
+
+        <p>
+            Share what you know, learn what you don't
+            and grow together with CSEP.
+        </p>
+
+        <a href="skills.html" class="cta-btn">
+            Explore Skills
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>CSEP.</h2>
+
+        <p>Learn a Skill • Share a Skill</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="community.html">Community</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 College Skill Exchange Platform.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="community.js"></script>
+
+</body>
+</html>
